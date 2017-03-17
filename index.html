@@ -10,6 +10,9 @@
         <script src="bower_components/jquery/dist/jquery.min.js" ></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" ></script>
         <script src="bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.min.js" ></script>
+        <script src="bower_components/instafeed.js/instafeed.min.js" ></script>
+        <script src="scripts/windowSyze.js" ></script>
+        <script src="scripts/insta.js" ></script>
 
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="bower_components/bootstrap-offcanvas/dist/css/bootstrap.offcanvas.min.css" rel="stylesheet">
@@ -17,7 +20,7 @@
     </head>
     <body class="body-offcanvas" >
         <header class="clearfix">
-            <nav class="navbar navbar-default" role="navigation">
+            <nav class="navbar navbar-default navbar-inverse navbar-fixed-top navbar-transparent" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">Talita Sampaio</a>
@@ -32,16 +35,38 @@
                     </div>
                     <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#Home">Home</a></li>
                             <li><a href="#">Contato</a></li>
+                            <li><a href="#">Agenda</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Musicas</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <section class="container-fluid" >
-            
+        <section class="container-fluid full-screen" id="Home"  style="background-image: url('imagens/Home3.jpg');" >
+            <div class="jumbotron" >
+                <img src="imagens/logo2.png" alt="Talita Sampaio">
+                <h2><span class="first-text" >VOCÊ FAZ</span> <br>  <span>FALTA AQUI</span></h2>
+                <p><a class="btn btn-play-video btn-primary btn-lg" href="#" role="button"> <span class="icon-play"></span> Assista ao vídeo</a></p>
+            </div>
         </section>
+
+        <section class="container-fluid" id="Insta-container" >
+            <h2 class="text-center  " >@TALITASAMPAIOOFICIAL</h2>
+            <h5 class="text-center" >SIGA NO INSTAGRAN </h5>
+
+            <div class="container" >
+                <div id="instafeed" class="row" ></div>
+            </div>
+
+        </section>
+
+        <section class="container-fluid full-screen" id="appointments" style="background-image: url('imagens/banda.jpg');" >
+            <h2 class="text-center" >AGENDA</h2>
+            <!--<h5 class="text-center" >SIGA NO INSTAGRAN </h5>-->
+        </section>
+        
     </body>
 </html>
