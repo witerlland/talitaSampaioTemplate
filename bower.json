@@ -1,0 +1,26 @@
+{
+  "name": "Talita Sampaio",
+  "homepage": "https://github.com/witerlland/talitaSampaioTemplate",
+  "authors": [
+    "Witerlland Blando Nogueira Silva <witerlland@outlook.com>"
+  ],
+  "description": "Template para website baseado em wordpress",
+  "main": "gulpFile.js",
+  "keywords": [
+    "wordpress",
+    "responsive",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-offcanvas": "^2.4.0",
+    "bootstrap": "^3.3.7"
+  }
+}
