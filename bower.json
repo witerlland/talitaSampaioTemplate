@@ -21,6 +21,7 @@
   ],
   "dependencies": {
     "bootstrap-offcanvas": "^2.4.0",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "instafeed.js": "^1.4.1"
   }
 }
