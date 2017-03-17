@@ -1,0 +1,278 @@
+.navbar-transparent{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#Home{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #BABABA;
+    background-repeat: no-repeat;
+    /*background-position: 0px -200px;*/
+    padding: 50px 0px 0px 0px !important;
+    /*height: 550px;*/
+}
+
+    #Home .jumbotron{
+        background-color: rgba(0, 0, 0, 0);
+        color: #FFF;
+    }
+
+    .btn-play-video{
+        background-color: rgba(0, 0, 0, 0);
+        border-color: #FFF;
+    }
+        .btn-play-video:hover{
+            border-color: #FFF;
+        }
+        .btn-play-video .icon-play{
+            width: 10px;
+            height: 10px;
+
+            border: 2px solid #000;
+        }
+
+#Insta-container{
+    background-color: #1b1b1b;
+}
+    #Insta-container h2{
+        color: #FFF;
+    }
+
+    #Insta-container h5{
+        color: #fd0042;
+    }
+
+    .insta-post a, .insta-post img{
+        width: 100%;
+        height: 100%;
+
+        margin-bottom: 10px;
+    }
+
+
+#appointments{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #BABABA;
+    background-repeat: no-repeat;
+    /*background-position: 0px -200px;*/
+    padding: 0px 0px 0px 0px !important;  
+}
+    #appointments h2{
+        color: #FFF;
+    }
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) and (max-width: 479px){
+            #Home .jumbotron img{
+                display: none;
+            }   
+
+            #Home .jumbotron{
+                text-align: center;
+            }
+
+            #Home .jumbotron h2{
+                font-size: 3.5em;
+            }
+                #Home .jumbotron h2 .first-text{
+                    margin-left: -50px;
+                }
+
+            #Home .jumbotron p{
+
+            }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) and (max-width: 767px){
+            #Home .jumbotron img{
+                display: none;
+            }
+
+            #Home .jumbotron{
+                text-align: center;
+            }
+
+            #Home .jumbotron h2{
+                font-size: 3.5em;
+            }
+                #Home .jumbotron h2 .first-text{
+                    margin-left: -50px;
+                }
+
+            #Home .jumbotron p{
+
+            }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) and (max-width: 968px){
+            #Home .jumbotron img{
+                display: none;
+            }
+
+            #Home .jumbotron h2{
+                position: absolute;
+
+                /*width: 400px;
+                height: auto;*/
+
+                left: 60%;
+
+                font-size: 3.5em;
+            }
+                #Home .jumbotron h2 .first-text{
+                    margin-left: -50px;
+                }
+
+            #Home .jumbotron p{
+                position: absolute;
+
+                top: 250px;
+
+                /*width: 400px;
+                height: auto;*/
+
+                left: 60%;
+            }
+    }
+
+    @media only screen and (min-width : 969px) and (max-width: 991px){
+            #Home .jumbotron img{
+                position: absolute;
+
+                width: 400px;
+                height: auto;
+
+                left: 50%;
+            }
+
+            #Home .jumbotron h2{
+                position: absolute;
+
+                top: 275px;
+
+                /*width: 400px;
+                height: auto;*/
+
+                left: 60%;
+
+                font-size: 3.5em;
+            }
+                #Home .jumbotron h2 .first-text{
+                    margin-left: -50px;
+                }
+
+            #Home .jumbotron p{
+                position: absolute;
+
+                bottom: 150px;
+
+                /*width: 400px;
+                height: auto;*/
+
+                left: 60%;
+            }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) and (max-width: 1199px){
+        #Home .jumbotron{
+            background-color: rgba(0, 0, 0, 0);
+            color: #FFF;
+        }
+            #Home .jumbotron img{
+                position: absolute;
+
+                width: 400px;
+                height: auto;
+
+                left: 50%;
+            }
+
+            #Home .jumbotron h2{
+                position: absolute;
+
+                top: 275px;
+
+                /*width: 400px;
+                height: auto;*/
+
+                left: 60%;
+
+                font-size: 3.5em;
+            }
+                #Home .jumbotron h2 .first-text{
+                    margin-left: -50px;
+                }
+
+            #Home .jumbotron p{
+                position: absolute;
+
+                bottom: 150px;
+
+                /*width: 400px;
+                height: auto;*/
+
+                left: 60%;
+            }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        #Home .jumbotron{
+            background-color: rgba(0, 0, 0, 0);
+            color: #FFF;
+        }
+            #Home .jumbotron img{
+                position: absolute;
+
+                width: 400px;
+                height: auto;
+
+                left: 50%;
+            }
+
+            #Home .jumbotron h2{
+                position: absolute;
+
+                top: 275px;
+
+                /*width: 400px;
+                height: auto;*/
+
+                left: 55%;
+
+                font-size: 3.5em;
+            }
+                #Home .jumbotron h2 .first-text{
+                    margin-left: -50px;
+                }
+
+            #Home .jumbotron p{
+                position: absolute;
+
+                bottom: 150px;
+
+                /*width: 400px;
+                height: auto;*/
+
+                left: 55%;
+            }
+
+    }
