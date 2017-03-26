@@ -1,5 +1,25 @@
+@font-face {
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham Black'), url('Gotham Black Regular.woff') format('woff');
+}
+
+body{
+    background-color: #1b1b1b !important;
+    font-family: 'Gotham Black';
+}
+
 .navbar-transparent{
     background-color: rgba(0, 0, 0, 0);
+    border: none !important;
+}
+
+.logo-image{
+    width: auto;
+    height: 50px;
+
+    margin-top: -19px;
 }
 
 #Home{
@@ -22,15 +42,29 @@
     .btn-play-video{
         background-color: rgba(0, 0, 0, 0);
         border-color: #FFF;
+
+        background-image: url('../imagens/btn.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-position: left center;
+        padding-left: 5px;
     }
         .btn-play-video:hover{
             border-color: #FFF;
+            background-color: #fd0042;
         }
-        .btn-play-video .icon-play{
-            width: 10px;
-            height: 10px;
+        .btn-play-video .icon-play img{
+            width: 25px !important;
+            height: auto;
+
+            margin-left: -70px;
 
             border: 2px solid #000;
+        }
+
+        .btn-play-video span{
+            padding-left: 35px;
         }
 
 #Insta-container{
@@ -51,6 +85,22 @@
         margin-bottom: 10px;
     }
 
+    .insta-post span.video{
+        /*border: 2px solid #fd0042;*/
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background-image: url('../imagens/video.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-position: right top;
+        /*padding-left: 5px;*/
+        padding-right: 40px;
+        padding-top: 10px;
+    }
+
 
 #appointments{
     -webkit-background-size: cover;
@@ -66,6 +116,181 @@
         color: #FFF;
     }
 
+#parallaxBarEvent{
+    height: 100%;
+    background-color:#004c82;
+    background: url('../imagens/banda.jpg') 50% 0 fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative; 
+}
+    #parallaxBarEvent h2{
+        color: #FFF;
+    }
+
+.parallax{
+    height: 1000px;
+    width: 100%;
+    background-color: #000;
+
+    padding-top: 30px;
+}
+
+    .parallax h2{
+        font-size: 4em;
+        margin-bottom: 10px;
+    }
+
+    .parallax col-md-6{
+        padding: 15px !important;
+    }
+
+    .event{
+        width: 100%;
+        height: auto;
+
+        /*border: 2px solid #FFF;*/
+        margin-bottom: 15px;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        color: #FFF;
+
+        transition: background-color 0.3s linear 0s, padding 0.3s linear 0s;
+    }
+        .event .row{
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+        .event:hover .row{
+            /*background-color: #fd0042;*/
+            background-color: rgba( 87, 6, 27, 0.7);
+            transition: background-color 0.3s linear 0s;
+        }
+
+    .event-date{
+        font-size: 5.5em;
+        text-align: right;
+        color: #fd0042;
+    }
+
+    .event-month{
+        font-size: 1.5em;
+        color: #fd0042;
+        text-align: left;
+        margin-top: 2em;
+
+        border-left: 2px solid #fd0042;
+        padding: 10px;
+    }
+
+    .event-location{
+        margin-left: 10px;
+    }
+
+    .event-descri{
+        margin-bottom: 3em;
+        margin-left: 10px;
+    }
+
+    .btn-plus{
+        color: #fd0042;
+        font-size: 2em;
+        border: 1px solid #FFF;
+        padding: 0px 5px;
+        border-radius: 200px;
+        cursor: pointer;
+    }
+
+#parallaxBarMusic{
+    height: 100%;
+    background-color:#004c82;
+    background: url('../imagens/music.jpg') 50% 0 fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    padding-top: 0px !important; 
+}
+    #parallaxBarMusic .container-fluid{
+        background-color: rgba( 209, 22, 72, 0.7);
+    }
+
+#contact{
+    background-color: #FFF !important;
+}
+    #contact .container-contact{
+        height: 100%;
+    }
+    #contact .col-md-7, #contact .col-md-5 { 
+        height: 100% !important;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #contact h2{
+        border-bottom: 2px solid #fd0042;
+        color: #fd0042;
+    }
+
+    #contact .row p{
+        font-size: 1.6em;
+        color: #fd0042;
+    }
+
+    #contact .row span{
+        color: #fd0042;
+    }
+
+    #contact .row ul{
+        margin-top: 20px;
+    }
+
+    #contact .row ul, #contact .row ul li{
+        padding: 0px !important;
+        list-style-type: none;
+    }
+
+    #contact .row ul li img{
+        width: 50px !important;
+        height: auto;
+
+        margin-top: 10px;
+    }
+
+#you-container .container{
+    height: 100%;
+
+    padding: 50px;
+}
+
+    .video{
+        width: 100%;
+        height: 100%;
+    }
+
+#footer{
+    background-color: #fd0042;
+    color: #FFF;
+
+    height: 100px;
+
+    padding-top: 25px;
+}
+    #footer a img{
+        width: 100px;
+        height: auto;
+
+        cursor: pointer;
+    }
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -274,5 +499,36 @@
 
                 left: 55%;
             }
+
+            .audio-container{
+                width: 100%;
+                height: 400px;
+
+                position: absolute;
+                top: 50%;
+                left: 0;
+
+                margin-top: -200px;
+            }
+                .audio-container .container{
+                    border: 2px solid #121212;
+                    background-color: #121212;
+                    height: 400px;
+                }
+
+                .audio-container .audio-photo{
+                    width: 500px;
+                    height: 500px;
+                    margin-top: -50px;
+                    margin-left: 15%;
+
+                    background: url('../imagens/album.jpg');
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+
+                    border: 2px solid #121212;
+                }
 
     }

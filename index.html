@@ -9,10 +9,13 @@
         
         <script src="bower_components/jquery/dist/jquery.min.js" ></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" ></script>
+        <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
         <script src="bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.min.js" ></script>
         <script src="bower_components/instafeed.js/instafeed.min.js" ></script>
         <script src="scripts/windowSyze.js" ></script>
         <script src="scripts/insta.js" ></script>
+        <script src="scripts/scroll.js" ></script>
+        <script src="scripts/soundCloud.js" ></script>
 
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="bower_components/bootstrap-offcanvas/dist/css/bootstrap.offcanvas.min.css" rel="stylesheet">
@@ -23,7 +26,7 @@
             <nav class="navbar navbar-default navbar-inverse navbar-fixed-top navbar-transparent" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Talita Sampaio</a>
+                        <a class="navbar-brand" href="#"><img alt="Brand" class="logo-image" src="imagens/logo2.png"></a>
                         <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left;">
                             <span class="sr-only">Toggle navigation</span>
                             <span>
@@ -49,7 +52,7 @@
             <div class="jumbotron" >
                 <img src="imagens/logo2.png" alt="Talita Sampaio">
                 <h2><span class="first-text" >VOCÊ FAZ</span> <br>  <span>FALTA AQUI</span></h2>
-                <p><a class="btn btn-play-video btn-primary btn-lg" href="#" role="button"> <span class="icon-play"></span> Assista ao vídeo</a></p>
+                <p><a class="btn btn-play-video btn-primary btn-lg" href="#" role="button"> <!--<i class="icon-play"><img src="imagens/btn.png" alt=""></i>--> <span>Assista ao vídeo</span> </a></p>
             </div>
         </section>
 
@@ -63,10 +66,128 @@
 
         </section>
 
-        <section class="container-fluid full-screen" id="appointments" style="background-image: url('imagens/banda.jpg');" >
+        <section class="parallax" id="parallaxBarEvent" data-speed="20" data-type="background" >
             <h2 class="text-center" >AGENDA</h2>
-            <!--<h5 class="text-center" >SIGA NO INSTAGRAN </h5>-->
+
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-md-6"  >
+                        <div class="event" style="background-image: url('imagens/evento.jpg');" >
+                            <div class="row" >
+                                <div class="col-xs-4 col-md-4" >
+                                    <h3 class="event-date" >11</h3>
+                                </div>
+                                <div class="col-xs-8 col-md-8" >
+                                    <h4 class="event-month" >MAR</h4>
+                                    <p class="event-location" ><strong>BARREIRAS-BA</strong></p>
+                                    <p class="event-descri" >SHOW TALITA SAMPAIO - </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6"  >
+                        <div class="event" style="background-image: url('imagens/evento.jpg');" >
+                            <div class="row" >
+                                <div class="col-xs-4 col-md-4" >
+                                    <h3 class="event-date" >11</h3>
+                                </div>
+                                <div class="col-xs-8 col-md-8" >
+                                    <h4 class="event-month" >MAR</h4>
+                                    <p class="event-location" ><strong>BARREIRAS-BA</strong></p>
+                                    <p class="event-descri" >SHOW TALITA SAMPAIO - </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6"  >
+                        <div class="event" style="background-image: url('imagens/evento.jpg');" >
+                            <div class="row" >
+                                <div class="col-xs-4 col-md-4" >
+                                    <h3 class="event-date" >11</h3>
+                                </div>
+                                <div class="col-xs-8 col-md-8" >
+                                    <h4 class="event-month" >MAR</h4>
+                                    <p class="event-location" ><strong>BARREIRAS-BA</strong></p>
+                                    <p class="event-descri" >SHOW TALITA SAMPAIO - </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6"  >
+                        <div class="event" style="background-image: url('imagens/evento.jpg');" >
+                            <div class="row" >
+                                <div class="col-xs-4 col-md-4" >
+                                    <h3 class="event-date" >11</h3>
+                                </div>
+                                <div class="col-xs-8 col-md-8" >
+                                    <h4 class="event-month" >MAR</h4>
+                                    <p class="event-location" ><strong>BARREIRAS-BA</strong></p>
+                                    <p class="event-descri" >SHOW TALITA SAMPAIO - </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-md-offset-5 text-center" >
+                        <span class="btn-plus text-center" >+</span>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section class="parallax" id="parallaxBarMusic" data-speed="20" data-type="background" >
+            <div class="container-fluid full-screen" >
+                <div class="audio-container" >
+                    <div class="container" >
+                        <div class="audio-photo" >
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <section class="container-fluid full-screen" id="contact" >
+            <section class="row container-contact" >
+                <div class="col-md-7 contact-image" style="background-image: url('imagens/contato.jpg');" ></div>
+                <div class="col-md-5" >
+                    <br>
+                    <div class="row" >
+                        <div class="col-md-6 col-md-offset-3" >
+                            <h2 class="text-center" >CONTATO</h2>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row text-center" >
+                        <p>77 9 9100.5782</p>
+                        <span>TALITA_SAMPAIO@GMAIL.COM</span>
+
+                        <br>
+
+                        <ul>
+                           <li><a href=""><img src="imagens/snap.png" alt="Snap"></a></li>
+                           <li><a href=""><img src="imagens/face.png" alt="Facebook"></a></li>
+                           <li><a href=""><img src="imagens/insta.png" alt="Instagran"></a></li>
+                           <li><a href=""><img src="imagens/youtube.png" alt="Youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="container-fluid full-screen" id="you-container" >
+            <div class="container" >
+                <iframe class="video" src="https://www.youtube.com/embed/awauvkPzt-0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <footer class="container-fluid text-center" id="footer" >
+            <a href="#Home" ><img src="imagens/arrow.png" alt=""></a>
+        </footer>
         
     </body>
 </html>
